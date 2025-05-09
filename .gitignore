@@ -8,8 +8,13 @@ venv/*
 # Não inclua arquivos de logs
 *.log
 
-#Não inclua arquivos de configuração
+# Não inclua variáveis de ambiente
+.env
+
+# Não inclua arquivos de configuração
 config.json
 
-
-create_table_duckdb/create_table2_duck.py
+# chart_ai não deve ser incluído no repositório
+chat_ai/xchat*.py
+chat_ai/*.json
+chat_ai/chroma_store

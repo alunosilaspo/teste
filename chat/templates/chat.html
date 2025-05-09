@@ -19,5 +19,11 @@
         <h2>Resposta do chatbot:</h2>
         <p>{{ bot_response }}</p>
     {% endif %}
+
+    {% if table %}
+        {{ table | safe }}
+    {% endif %}
+
+
 </body>
 </html>

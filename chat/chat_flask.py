@@ -41,7 +41,8 @@ def chatbot_form():
                 if df.empty:
                     bot_response = f"Você disse: {user_message} e não encontrei resultados!"
                 else:
-                    return render_template("dataframe.html", table=df.to_html())
+                    bot_response = "Você disse:"
+                    return render_template("chat2.html", user_message=user_message, bot_response=bot_response,table=df.to_html())
             else:
                 bot_response = f"Você disse: {user_message}!"
 
